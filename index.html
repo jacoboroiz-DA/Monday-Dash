@@ -1564,11 +1564,12 @@ function applyView(){
   if(SEL===LATEST_ID){ vb.hidden = true; vb.innerHTML = ''; }
   else {
     vb.hidden = false;
-    vb.innerHTML = '<span>Viewing week '+META.week+' (data thru '+META.dataThruLabel+')</span><button type="button" id="backBtn">Back to current week</button>'
+    vb.innerHTML = '<span>Viewing week '+META.week+' (data thru '+META.dataThruLabel+')</span><button type="button" id="backBtn">Back to the latest week</button>'
       + (META.note ? '<span class="vb-note"></span>' : '');
     if(META.note) vb.querySelector('.vb-note').textContent = META.note;
     document.getElementById('backBtn').addEventListener('click', ()=> selectWeek(LATEST_ID));
   }
+  { const ov=document.getElementById('otherView'); if(ov) ov.hidden = (SEL!==LATEST_ID); }
   closeModal();
   renderKPIs(); renderHolistic(); renderHolisticPace(); renderOverview();
   selectMember(selectedMember, {silent:true});
