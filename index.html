@@ -482,40 +482,43 @@
   .brandchip img{display:block;height:36px;width:auto;}
 
   /* Other accounts (collapsible by client manager) */
-  #otherView .oa-list{display:flex;flex-direction:column;gap:10px;padding:0 14px 14px;}
-  #otherView details{background:linear-gradient(165deg,rgba(255,255,255,.82),rgba(255,255,255,.5));border:1px solid var(--glass-edge);border-radius:20px;box-shadow:inset 0 1px 0 rgba(255,255,255,.95),0 10px 24px -16px rgba(30,62,140,.4);}
-  #otherView summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:20px;}
-  #otherView summary::-webkit-details-marker{display:none;}
-  #otherView summary:focus-visible{outline:2px solid var(--brand);outline-offset:2px;}
-  #otherView .oa-id{flex:1;min-width:0;}
-  #otherView .oa-name{font-weight:800;font-size:14px;color:var(--ink-primary);}
-  #otherView .oa-count{font-size:12px;color:var(--ink-secondary);font-weight:500;margin-top:2px;}
-  #otherView .oa-total{text-align:right;font-weight:800;font-size:14px;color:var(--ink-primary);white-space:nowrap;}
-  #otherView .oa-total small{display:block;font-size:11px;font-weight:500;color:var(--ink-secondary);}
-  #otherView .oa-chev{width:18px;height:18px;flex:none;color:var(--ink-secondary);transition:transform .15s;}
-  #otherView details[open] .oa-chev{transform:rotate(90deg);}
-  #otherView .oa-body{padding:0 16px 14px;}
-  #otherView table{width:100%;min-width:0;border-collapse:collapse;font-size:12.5px;}
-  #otherView th{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-secondary);font-weight:700;padding:6px 8px;text-align:center;border-bottom:1px solid var(--border-strong);}
-  #otherView td{padding:7px 8px;text-align:center;border-bottom:1px solid rgba(183,206,232,.45);color:var(--ink-primary);}
-  #otherView th:first-child,#otherView td:first-child{text-align:left;}
-  #otherView td.oa-muted{color:var(--ink-secondary);}
-  #otherView .oa-tag{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:99px;background:rgba(138,91,0,.12);color:#8A5B00;margin-left:6px;}
-  #otherView .oa-note{font-size:11.5px;color:var(--ink-secondary);text-align:center;padding:0 16px 14px;}
-  #otherView details.oa-zero{margin-top:12px;background:rgba(255,255,255,.35);border-radius:14px;box-shadow:none;}
-  #otherView details.oa-zero summary{padding:8px 12px;border-radius:14px;gap:8px;}
-  #otherView .oa-zname{flex:1;font-size:12px;font-weight:700;color:var(--ink-secondary);}
-  #otherView .oa-zcount{font-size:11.5px;color:var(--ink-secondary);}
-  #otherView details.oa-zero table{width:calc(100% - 16px);margin:0 8px 8px;}
-  #otherView td{overflow-wrap:anywhere;white-space:normal;}
-  #otherView td:last-child{white-space:nowrap;}
-  #otherView .oa-grid{padding:4px 0 10px;}
-  #otherView .oa-card .tc-value{font-size:20px;}
-  #otherView .oa-card .tc-foot{justify-content:center;}
-  #otherView .oa-panel{margin-top:6px;padding:4px 2px 0;}
-  #otherView .oa-ptitle{font-size:15px;font-weight:800;color:#12285E;margin:0 4px 8px;display:flex;align-items:baseline;gap:10px;}
-  #otherView .oa-ptitle span{font-size:12px;font-weight:600;color:var(--ink-secondary);}
-  @media (max-width:640px){#otherView summary{padding:10px 12px;gap:8px;}#otherView .oa-total small{display:none;}#otherView .oa-body{padding:0 6px 12px;}#otherView th,#otherView td{padding:6px 4px;font-size:12px;}#otherView th{font-size:10px;}}
+  #minorView .oa-list{display:flex;flex-direction:column;gap:10px;padding:0 14px 14px;}
+  #minorView details{background:linear-gradient(165deg,rgba(255,255,255,.82),rgba(255,255,255,.5));border:1px solid var(--glass-edge);border-radius:20px;box-shadow:inset 0 1px 0 rgba(255,255,255,.95),0 10px 24px -16px rgba(30,62,140,.4);}
+  #minorView summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:20px;}
+  #minorView summary::-webkit-details-marker{display:none;}
+  #minorView summary:focus-visible{outline:2px solid var(--brand);outline-offset:2px;}
+  #minorView .oa-id{flex:1;min-width:0;}
+  #minorView .oa-name{font-weight:800;font-size:14px;color:var(--ink-primary);}
+  #minorView .oa-count{font-size:12px;color:var(--ink-secondary);font-weight:500;margin-top:2px;}
+  #minorView .oa-total{text-align:right;font-weight:800;font-size:14px;color:var(--ink-primary);white-space:nowrap;}
+  #minorView .oa-total small{display:block;font-size:11px;font-weight:500;color:var(--ink-secondary);}
+  #minorView .oa-chev{width:18px;height:18px;flex:none;color:var(--ink-secondary);transition:transform .15s;}
+  #minorView details[open] .oa-chev{transform:rotate(90deg);}
+  #minorView .oa-body{padding:0 16px 14px;}
+  #minorView table{width:100%;min-width:0;border-collapse:collapse;font-size:12.5px;}
+  #minorView th{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-secondary);font-weight:700;padding:6px 8px;text-align:center;border-bottom:1px solid var(--border-strong);}
+  #minorView td{padding:7px 8px;text-align:center;border-bottom:1px solid rgba(183,206,232,.45);color:var(--ink-primary);}
+  #minorView th:first-child,#minorView td:first-child{text-align:left;}
+  #minorView td.oa-muted{color:var(--ink-secondary);}
+  #minorView .oa-tag{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:99px;background:rgba(138,91,0,.12);color:#8A5B00;margin-left:6px;}
+  #minorView .oa-note{font-size:11.5px;color:var(--ink-secondary);text-align:center;padding:0 16px 14px;}
+  #minorView details.oa-zero{margin-top:12px;background:rgba(255,255,255,.35);border-radius:14px;box-shadow:none;}
+  #minorView details.oa-zero summary{padding:8px 12px;border-radius:14px;gap:8px;}
+  #minorView .oa-zname{flex:1;font-size:12px;font-weight:700;color:var(--ink-secondary);}
+  #minorView .oa-zcount{font-size:11.5px;color:var(--ink-secondary);}
+  #minorView details.oa-zero table{width:calc(100% - 16px);margin:0 8px 8px;}
+  #minorView td{overflow-wrap:anywhere;white-space:normal;}
+  #minorView td:last-child{white-space:nowrap;}
+  #minorView .oa-grid{padding:4px 0 10px;}
+  #minorView .oa-card .tc-value{font-size:20px;}
+  #minorView .oa-card .tc-foot{justify-content:center;}
+  #minorView .oa-panel{margin-top:6px;padding:4px 2px 0;}
+  #minorView .oa-ptitle{font-size:15px;font-weight:800;color:#12285E;margin:0 4px 8px;display:flex;align-items:baseline;gap:10px;}
+  #minorView .oa-ptitle span{font-size:12px;font-weight:600;color:var(--ink-secondary);}
+  @media (max-width:640px){#minorView summary{padding:10px 12px;gap:8px;}#minorView .oa-total small{display:none;}#minorView .oa-body{padding:0 6px 12px;}#minorView th,#minorView td{padding:6px 4px;font-size:12px;}#minorView th{font-size:10px;}}
+
+  #minorView .oa-grid{margin-top:2px;}
+  .team-card.others-card .tc-label{margin-top:30px;}
 </style></head><body>
 
 <div class="wrap">
@@ -585,11 +588,10 @@
     </div>
   </section>
 
-  <section id="otherView">
-    <div class="section-title"><span class="icon">🗂️</span>Other Accounts by Client Manager</div>
-    <p class="section-desc" id="otherDesc"></p>
-    <div class="table-panel"><div class="oa-list" id="otherList"></div></div>
-    <p class="oa-note">Reference list only. These accounts are not part of the 20 tracked accounts, KPIs, goals or pacing above.</p>
+  <section id="minorView" hidden>
+    <div class="section-title"><span class="icon">🗂️</span><span id="minorTitle"></span></div>
+    <p class="section-desc" id="minorDesc"></p>
+    <div class="table-panel"><div class="oa-list" id="minorBody"></div></div>
   </section>
 
   <footer>
@@ -631,6 +633,87 @@ let SEL = LATEST_ID, DATA = SNAPSHOTS[LATEST_ID].data, META = SNAPSHOTS[LATEST_I
 
 /* ---------- Client Services member grouping ---------- */
 // Account owner per client services member. Every account in DATA must appear exactly once.
+
+/* ---------- Other accounts, combined into each client manager (static list from Master_Advertiser_Report 11/5; manager = unlabeled column F) ---------- */
+const OTHER_GROUPS = [{"key":"jake","name":"Jake & Joanie","rows":[{"n":"Exact Customer (Flooring Remodel)","s":"","v":1695,"l":""},{"n":"Exact Customer (Roofing Remodel)","s":"","v":1470,"l":""},{"n":"Exact Customer (Bathroom Remodel)","s":"","v":900,"l":""},{"n":"AdProdigi","s":"","v":400,"l":""},{"n":"Exact Customer (Gutter Remodel)","s":"","v":70,"l":""},{"n":"American Dream Auto Protect","s":"","v":0,"l":""},{"n":"Converge (APFM)","s":"","v":0,"l":""},{"n":"Converge (LeafFilter)","s":"","v":0,"l":""},{"n":"Converge Direct (Roof Savings Pro)","s":"","v":0,"l":""},{"n":"Converge Direct (Torts)","s":"","v":0,"l":""},{"n":"Exact Customer (SSDI)","s":"","v":0,"l":""},{"n":"Gutter Service Pros","s":"","v":0,"l":""},{"n":"Kohler","s":"","v":0,"l":""},{"n":"Media Resource Group (MRG)","s":"","v":0,"l":""},{"n":"TruGreen","s":"","v":0,"l":""},{"n":"US Med","s":"","v":0,"l":""}]},{"key":"jenl","name":"Jen L","rows":[{"n":"Transport Digital Media","s":"","v":1890,"l":""},{"n":"Be Kept Up","s":"","v":308,"l":""},{"n":"BarkBox","s":"","v":70,"l":""},{"n":"LifeStory","s":"","v":67,"l":""},{"n":"AG1","s":"","v":0,"l":""},{"n":"hear.com","s":"","v":0,"l":""},{"n":"Natural Intelligence","s":"","v":0,"l":""},{"n":"SBLI","s":"","v":0,"l":""}]},{"key":"melissa","name":"Melissa","rows":[{"n":"Banner Edge","s":"","v":560,"l":""},{"n":"Cinch Home Warranty","s":"","v":560,"l":""},{"n":"Fairway Corporation","s":"","v":525,"l":""},{"n":"Aspiration","s":"","v":0,"l":""},{"n":"Avenue Link","s":"","v":0,"l":""},{"n":"BrandXAds (Lyle)","s":"","v":0,"l":""},{"n":"Strand (Upstart)","s":"","v":0,"l":""}]},{"key":"debbie","name":"Debbie","rows":[{"n":"National Consumer Panel","s":"","v":1209,"l":""},{"n":"Orangetheory Fitness","s":"","v":702,"l":""},{"n":"Datalot","s":"","v":0,"l":""},{"n":"Leap Theory","s":"","v":0,"l":""},{"n":"SafeStreets","s":"","v":0,"l":""},{"n":"Wag!","s":"","v":0,"l":""}]},{"key":"chris","name":"Chris","rows":[{"n":"American Residential Warranty (ARW)","s":"","v":900,"l":""},{"n":"JG Wentworth","s":"","v":305,"l":""},{"n":"Digital Media Solutions (DMS)","s":"","v":0,"l":""}]},{"key":"others","name":"Others","rows":[{"n":"Refills","s":"","v":1875,"l":"Josh"},{"n":"Money.com","s":"","v":550,"l":"Stephen"},{"n":"AmeriSave","s":"","v":475,"l":"Sol"},{"n":"Alchemy Worx","s":"","v":364,"l":"Jen G"},{"n":"Smart Financial","s":"","v":180,"l":"Bora"},{"n":"Willow Creek Partners","s":"","v":140,"l":"Jen G"},{"n":"EverQuote","s":"","v":135,"l":"Sol"},{"n":"New American Funding","s":"","v":80,"l":"Bora"},{"n":"MediaAlpha","s":"","v":7.0,"l":"Jen G"},{"n":"American Residential Services - ARS","s":"","v":0,"l":"Jen G"},{"n":"BrandXads","s":"","v":0,"l":"N/A"},{"n":"Century Debt","s":"","v":0,"l":"Jen G"},{"n":"ChildFund","s":"","v":0,"l":"N/A"},{"n":"CJ - Fandango, Inc.","s":"","v":0,"l":"N/A"},{"n":"Core Digital","s":"Old","v":0,"l":""},{"n":"Direct Agents","s":"","v":0,"l":"N/A"},{"n":"Direct Agents","s":"","v":0,"l":"N/A"},{"n":"EnterTech","s":"","v":0,"l":"Shea"},{"n":"Excel Impact","s":"","v":0,"l":"Sol"},{"n":"Finance of America","s":"","v":0,"l":"Jen G"},{"n":"Healthcare.com","s":"","v":0,"l":"Jen G"},{"n":"Koalaty Leads","s":"","v":0,"l":"Ella"},{"n":"Lead Economy","s":"","v":0,"l":"Jen G"},{"n":"Merkle, Inc","s":"","v":0,"l":"Jen G"},{"n":"MobileHelp","s":"","v":0,"l":"Jen G"},{"n":"QuoteWizard","s":"","v":0,"l":"Sol"},{"n":"ServiceMaster Brands Management, LLC.","s":"","v":0,"l":"Jen G"},{"n":"Tommy Bahama","s":"","v":0,"l":"N/A"},{"n":"TrySmartly, LLC.","s":"","v":0,"l":"Jen G"},{"n":"XLT Media Solutions","s":"","v":0,"l":"Sol"}]}];
+const OTHER_BY_KEY = {}; OTHER_GROUPS.forEach(g=>OTHER_BY_KEY[g.key]=g);
+let oaSel = null;
+const oaUsd = n => '$' + Math.round(n).toLocaleString('en-US');
+const oaEsc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const OA_CHEV = '<svg class="oa-chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4l6 6-6 6"/></svg>';
+const oaRow = r => `<tr><td>${oaEsc(r.n)}${r.s?'<span class="oa-tag">'+r.s+'</span>':''}</td><td>${oaUsd(r.v)}</td></tr>`;
+function oaTable(rows){
+  const act = rows.filter(r=>r.v>0), zero = rows.filter(r=>!(r.v>0));
+  const zBlock = zero.length ? `<details class="oa-zero"><summary><span class="oa-zname">No spend ($0) in 11/5 report</span><span class="oa-zcount">${zero.length} ${zero.length===1?'account':'accounts'}</span>${OA_CHEV}</summary><table><tbody>${zero.map(oaRow).join('')}</tbody></table></details>` : '';
+  return {act, zero, html: (act.length?`<table><thead><tr><th>Account</th><th>Spend in 11/5 report</th></tr></thead><tbody>${act.map(oaRow).join('')}</tbody></table>`:'') + zBlock};
+}
+const oaCounts = (act,zero) => act.length+' with spend'+(zero.length?', '+zero.length+' at $0':'');
+const oaSum = rows => rows.reduce((s,r)=>s+r.v,0);
+function oaSubs(g){
+  const m = {};
+  g.rows.forEach(r=>{ const k = r.l || 'No manager'; (m[k]=m[k]||[]).push(r); });
+  return Object.keys(m).map(k=>({name:k, rows:m[k]})).sort((a,b)=> (oaSum(b.rows)-oaSum(a.rows)) || (b.rows.length-a.rows.length) || a.name.localeCompare(b.name));
+}
+function oaExtraCount(key){ return (SEL===LATEST_ID && OTHER_BY_KEY[key]) ? OTHER_BY_KEY[key].rows.length : 0; }
+function tcCountText(g){ const n=groupData(g).length, x=oaExtraCount(g.key); return x ? n+' main + '+x+' other' : n+' '+(n===1?'account':'accounts'); }
+function oaValidKey(k){ return k==='all' || (k==='others' && SEL===LATEST_ID && !!OTHER_BY_KEY.others) || !!(groupByKey(k) && groupData(groupByKey(k)).length); }
+function othersCardHTML(){
+  const g = OTHER_BY_KEY.others; if(!g || SEL!==LATEST_ID) return '';
+  const t = oaTable(g.rows), sel = selectedMember==='others';
+  return `<button type="button" class="team-card others-card ${sel?'selected':''}" data-key="others" aria-pressed="${sel}"><div class="tc-head">${avatarHTML('Others')}<div class="tc-id"><div class="tc-name">Others</div><div class="tc-count">${oaSubs(g).length} people, ${g.rows.length} accounts</div></div></div><div class="tc-label">Spend in 11/5 report</div><div class="tc-value">${oaUsd(oaSum(g.rows))}</div><div class="tc-goal">No goals set</div><div class="tc-foot"><span class="tc-over">${oaCounts(t.act,t.zero)}</span></div></button>`;
+}
+function oaOthersHTML(g){
+  return `<div class="team-grid oa-grid">${oaSubs(g).map(sg=>{
+    const tt = oaTable(sg.rows);
+    return `<button type="button" class="team-card oa-card" data-k="${oaEsc(sg.name)}" aria-pressed="false"><div class="tc-head">${avatarHTML(sg.name)}<div class="tc-id"><div class="tc-name">${oaEsc(sg.name)}</div><div class="tc-count">${sg.rows.length} ${sg.rows.length===1?'account':'accounts'}</div></div></div><div class="tc-label">Spend in 11/5 report</div><div class="tc-value">${oaUsd(oaSum(sg.rows))}</div><div class="tc-foot"><span class="tc-over">${oaCounts(tt.act,tt.zero)}</span></div></button>`;
+  }).join('')}</div><div class="oa-panel" id="oaPanel" hidden></div>`;
+}
+function oaBindCards(){
+  const g = OTHER_BY_KEY.others, panel = document.getElementById('oaPanel'); if(!g || !panel) return;
+  const sm = {}; oaSubs(g).forEach(s=>sm[s.name]=s);
+  oaSel = null;
+  document.querySelectorAll('#minorBody .oa-card').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const k = btn.dataset.k;
+      oaSel = (oaSel===k) ? null : k;
+      document.querySelectorAll('#minorBody .oa-card').forEach(b=>{ const on = b.dataset.k===oaSel; b.classList.toggle('selected',on); b.setAttribute('aria-pressed',on); });
+      if(!oaSel){ panel.hidden = true; panel.innerHTML=''; return; }
+      const sg = sm[oaSel], tt = oaTable(sg.rows);
+      panel.innerHTML = `<div class="oa-ptitle">${oaEsc(sg.name)}<span>${sg.rows.length} ${sg.rows.length===1?'account':'accounts'}</span></div>${tt.html}`;
+      panel.hidden = false;
+    });
+  });
+}
+function renderMinor(){
+  const box = document.getElementById('minorView'), body = document.getElementById('minorBody');
+  const key = selectedMember;
+  if(key==null || SEL!==LATEST_ID){ box.hidden = true; body.innerHTML = ''; return; }
+  const title = document.getElementById('minorTitle'), desc = document.getElementById('minorDesc');
+  let html = '';
+  if(key==='others'){
+    title.textContent = 'Others';
+    desc.textContent = 'Team members outside the main group (Jen G, Bora, media members) and accounts without a client manager, sorted by spend. Select a person to see their accounts.';
+    html = oaOthersHTML(OTHER_BY_KEY.others);
+  } else if(key==='all'){
+    const total = OTHER_GROUPS.reduce((s,g)=>s+g.rows.length,0);
+    title.textContent = 'Other Accounts';
+    desc.textContent = total+' accounts outside the 20 main accounts, grouped by client manager. They have no goals or pacing; spend as reported on 11/5. Paused accounts are excluded.';
+    html = OTHER_GROUPS.map(g=>{
+      const isO = g.key==='others', t = oaTable(g.rows);
+      const nm = isO ? 'Others' : groupByKey(g.key).name;
+      return `<details><summary>${avatarHTML(nm)}<div class="oa-id"><div class="oa-name">${oaEsc(nm)}</div><div class="oa-count">${isO? oaSubs(g).length+' people, '+g.rows.length+' accounts' : oaCounts(t.act,t.zero)}</div></div><div class="oa-total">${oaUsd(oaSum(g.rows))}<small>spend in 11/5 report</small></div>${OA_CHEV}</summary><div class="oa-body">${isO? oaOthersHTML(g) : t.html}</div></details>`;
+    }).join('');
+  } else {
+    const g = OTHER_BY_KEY[key];
+    if(!g){ box.hidden = true; body.innerHTML = ''; return; }
+    title.textContent = 'Other Accounts: '+groupByKey(key).name;
+    desc.textContent = g.rows.length+' accounts outside the 20 main accounts. They have no goals or pacing; spend as reported on 11/5. Paused accounts are excluded.';
+    html = '<div class="oa-body" style="padding-top:0">'+oaTable(g.rows).html+'</div>';
+  }
+  body.innerHTML = html; box.hidden = false;
+  oaBindCards();
+}
+
 const TEAM = [
   {key:"jake", name:"Jake & Joanie", accounts:["Endurance", "Exact Customer - RbA"]},
   {key:"debbie", name:"Debbie", accounts:["ADT", "NerdWallet", "Vivint", "Liberty Mutual", "UMA"]},
@@ -1260,14 +1343,14 @@ function renderTeamCards(){
     const good = s.delta>=0;
     const sel = g.key===selectedMember;
     return `<button type="button" class="team-card ${good?'st-good':'st-bad'} ${sel?'selected':''}" data-key="${g.key}" aria-pressed="${sel}">
-      <div class="tc-head">${avatarHTML(g.name)}<div class="tc-id"><div class="tc-name">${g.name}</div><div class="tc-count">${groupData(g).length} ${groupData(g).length===1?'account':'accounts'}</div></div></div>
+      <div class="tc-head">${avatarHTML(g.name)}<div class="tc-id"><div class="tc-name">${g.name}</div><div class="tc-count">${tcCountText(g)}</div></div></div>
       <div class="tc-gauge">${gaugeSVG(pctGoal)}</div>
       <div class="tc-label">Pacing thru ${LATEST_LABEL}</div>
       <div class="tc-value">${fmt(s.pacing)}</div>
       <div class="tc-goal">${s.nExtra? (s.goal>0?'Core '+fmtShort(s.pacingCore)+' of '+fmtShort(s.goal)+' goal':'No goals set') : 'of '+fmt(s.goal)+' goal'}</div>
       <div class="tc-foot">${s.nGoal>0?`<span class="tc-delta ${good?'good':'bad'}">${good?'+':''}${fmt(s.delta)}</span><span class="tc-over">${s.over} of ${s.nGoal} over goal</span>`:`<span class="tc-over">${s.nExtra} accounts, no goal</span>`}</div>
     </button>`;
-  }).join('');
+  }).join('') + othersCardHTML();
   document.querySelectorAll('#teamGrid .team-card').forEach(btn=>{
     btn.addEventListener('click', ()=> selectMember(btn.dataset.key===selectedMember ? null : btn.dataset.key));
   });
@@ -1441,7 +1524,7 @@ function renderMemberPanel(){
 /* ---------- accounts table (zones) ---------- */
 let currentRows = [];
 function updateZTitle(grp, rows){
-  document.getElementById('detailTitleText').textContent = grp.key==='all' ? 'All '+rows.length+' Accounts' : grp.name+': '+rows.length+(rows.length===1?' Account':' Accounts');
+  document.getElementById('detailTitleText').textContent = grp.key==='all' ? 'All '+rows.length+' Accounts' : grp.name+': '+rows.length+(rows.length===1?' Main Account':' Main Accounts');
   const tn=document.getElementById('totalNote'); if(tn) tn.textContent='';
 }
 function tableRows(){
@@ -1529,13 +1612,15 @@ function monthSummary(rows){
 }
 function selectMember(key, opts){
   opts = opts||{};
-  if(key && key!=='all' && !(groupByKey(key) && groupData(groupByKey(key)).length)) key = null;
+  if(key && !oaValidKey(key)) key = null;
   selectedMember = key;
   renderTeamCards();
   const panel = document.getElementById('memberPanel'), detail = document.getElementById('detail');
-  if(key==null){ panel.hidden = true; detail.hidden = true; return; }
+  if(key==null){ panel.hidden = true; detail.hidden = true; renderMinor(); return; }
+  if(key==='others'){ panel.hidden = true; detail.hidden = true; renderMinor(); if(!opts.silent) document.getElementById('minorView').scrollIntoView({behavior:'smooth', block:'start'}); return; }
   renderMemberPanel();
   tableRows();
+  renderMinor();
   [panel, detail].forEach(el=>{ el.hidden = false; if(!opts.silent){ el.classList.remove('reveal'); void el.offsetWidth; el.classList.add('reveal'); } });
   if(!opts.silent) panel.scrollIntoView({behavior:'smooth', block:'start'});
 }
@@ -1570,64 +1655,10 @@ function applyView(){
     if(META.note) vb.querySelector('.vb-note').textContent = META.note;
     document.getElementById('backBtn').addEventListener('click', ()=> selectWeek(LATEST_ID));
   }
-  { const ov=document.getElementById('otherView'); if(ov) ov.hidden = (SEL!==LATEST_ID); }
   closeModal();
   renderKPIs(); renderHolistic(); renderHolisticPace(); renderOverview();
   selectMember(selectedMember, {silent:true});
 }
 applyView();
-
-/* ---------- Other accounts (static list from Master_Advertiser_Report 11/5, client manager = unlabeled column F) ---------- */
-const OTHER_GROUPS = [{"key":"jake","name":"Jake & Joanie","rows":[{"n":"Exact Customer (Flooring Remodel)","s":"","v":1695,"l":""},{"n":"Exact Customer (Roofing Remodel)","s":"","v":1470,"l":""},{"n":"Exact Customer (Bathroom Remodel)","s":"","v":900,"l":""},{"n":"AdProdigi","s":"","v":400,"l":""},{"n":"Exact Customer (Gutter Remodel)","s":"","v":70,"l":""},{"n":"American Dream Auto Protect","s":"","v":0,"l":""},{"n":"Converge (APFM)","s":"","v":0,"l":""},{"n":"Converge (LeafFilter)","s":"","v":0,"l":""},{"n":"Converge Direct (Roof Savings Pro)","s":"","v":0,"l":""},{"n":"Converge Direct (Torts)","s":"","v":0,"l":""},{"n":"Exact Customer (SSDI)","s":"","v":0,"l":""},{"n":"Gutter Service Pros","s":"","v":0,"l":""},{"n":"Kohler","s":"","v":0,"l":""},{"n":"Media Resource Group (MRG)","s":"","v":0,"l":""},{"n":"TruGreen","s":"","v":0,"l":""},{"n":"US Med","s":"","v":0,"l":""}]},{"key":"jenl","name":"Jen L","rows":[{"n":"Transport Digital Media","s":"","v":1890,"l":""},{"n":"Be Kept Up","s":"","v":308,"l":""},{"n":"BarkBox","s":"","v":70,"l":""},{"n":"LifeStory","s":"","v":67,"l":""},{"n":"AG1","s":"","v":0,"l":""},{"n":"hear.com","s":"","v":0,"l":""},{"n":"Natural Intelligence","s":"","v":0,"l":""},{"n":"SBLI","s":"","v":0,"l":""}]},{"key":"melissa","name":"Melissa","rows":[{"n":"Banner Edge","s":"","v":560,"l":""},{"n":"Cinch Home Warranty","s":"","v":560,"l":""},{"n":"Fairway Corporation","s":"","v":525,"l":""},{"n":"Aspiration","s":"","v":0,"l":""},{"n":"Avenue Link","s":"","v":0,"l":""},{"n":"BrandXAds (Lyle)","s":"","v":0,"l":""},{"n":"Strand (Upstart)","s":"","v":0,"l":""}]},{"key":"debbie","name":"Debbie","rows":[{"n":"National Consumer Panel","s":"","v":1209,"l":""},{"n":"Orangetheory Fitness","s":"","v":702,"l":""},{"n":"Datalot","s":"","v":0,"l":""},{"n":"Leap Theory","s":"","v":0,"l":""},{"n":"SafeStreets","s":"","v":0,"l":""},{"n":"Wag!","s":"","v":0,"l":""}]},{"key":"chris","name":"Chris","rows":[{"n":"American Residential Warranty (ARW)","s":"","v":900,"l":""},{"n":"JG Wentworth","s":"","v":305,"l":""},{"n":"Digital Media Solutions (DMS)","s":"","v":0,"l":""}]},{"key":"others","name":"Others","rows":[{"n":"Refills","s":"","v":1875,"l":"Josh"},{"n":"Money.com","s":"","v":550,"l":"Stephen"},{"n":"AmeriSave","s":"","v":475,"l":"Sol"},{"n":"Alchemy Worx","s":"","v":364,"l":"Jen G"},{"n":"Smart Financial","s":"","v":180,"l":"Bora"},{"n":"Willow Creek Partners","s":"","v":140,"l":"Jen G"},{"n":"EverQuote","s":"","v":135,"l":"Sol"},{"n":"New American Funding","s":"","v":80,"l":"Bora"},{"n":"MediaAlpha","s":"","v":7.0,"l":"Jen G"},{"n":"American Residential Services - ARS","s":"","v":0,"l":"Jen G"},{"n":"BrandXads","s":"","v":0,"l":"N/A"},{"n":"Century Debt","s":"","v":0,"l":"Jen G"},{"n":"ChildFund","s":"","v":0,"l":"N/A"},{"n":"CJ - Fandango, Inc.","s":"","v":0,"l":"N/A"},{"n":"Core Digital","s":"Old","v":0,"l":""},{"n":"Direct Agents","s":"","v":0,"l":"N/A"},{"n":"Direct Agents","s":"","v":0,"l":"N/A"},{"n":"EnterTech","s":"","v":0,"l":"Shea"},{"n":"Excel Impact","s":"","v":0,"l":"Sol"},{"n":"Finance of America","s":"","v":0,"l":"Jen G"},{"n":"Healthcare.com","s":"","v":0,"l":"Jen G"},{"n":"Koalaty Leads","s":"","v":0,"l":"Ella"},{"n":"Lead Economy","s":"","v":0,"l":"Jen G"},{"n":"Merkle, Inc","s":"","v":0,"l":"Jen G"},{"n":"MobileHelp","s":"","v":0,"l":"Jen G"},{"n":"QuoteWizard","s":"","v":0,"l":"Sol"},{"n":"ServiceMaster Brands Management, LLC.","s":"","v":0,"l":"Jen G"},{"n":"Tommy Bahama","s":"","v":0,"l":"N/A"},{"n":"TrySmartly, LLC.","s":"","v":0,"l":"Jen G"},{"n":"XLT Media Solutions","s":"","v":0,"l":"Sol"}]}];
-let oaSel = null;
-function renderOtherAccounts(){
-  const fmtUsd = n => '$' + Math.round(n).toLocaleString('en-US');
-  const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
-  const mk = r => `<tr><td>${esc(r.n)}${r.s?'<span class="oa-tag">'+r.s+'</span>':''}</td><td>${fmtUsd(r.v)}</td></tr>`;
-  const chev = '<svg class="oa-chev" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4l6 6-6 6"/></svg>';
-  const tableOf = rows => {
-    const act = rows.filter(r=>r.v>0), zero = rows.filter(r=>!(r.v>0));
-    const zBlock = zero.length ? `<details class="oa-zero"><summary><span class="oa-zname">No spend ($0) in 11/5 report</span><span class="oa-zcount">${zero.length} ${zero.length===1?'account':'accounts'}</span>${chev}</summary><table><tbody>${zero.map(mk).join('')}</tbody></table></details>` : '';
-    return {act, zero, html: (act.length?`<table><thead><tr><th>Account</th><th>Spend in 11/5 report</th></tr></thead><tbody>${act.map(mk).join('')}</tbody></table>`:'') + zBlock};
-  };
-  const counts = (act,zero) => act.length+' with spend'+(zero.length?', '+zero.length+' at $0':'');
-  const total = OTHER_GROUPS.reduce((s,g)=>s+g.rows.length,0);
-  document.getElementById('otherDesc').textContent = total+' additional accounts grouped by client manager. Expand a manager to see the list. Others holds team members outside the main group (Jen G, Bora, media members) and accounts without a client manager. Paused accounts are excluded.';
-  // Others: sub-groups by the original "listed under" value
-  const subs = g => {
-    const m = {};
-    g.rows.forEach(r=>{ const k = r.l || 'No manager'; (m[k]=m[k]||[]).push(r); });
-    return Object.keys(m).map(k=>({name:k, rows:m[k]})).sort((a,b)=> (b.rows.reduce((t,r)=>t+r.v,0)-a.rows.reduce((t,r)=>t+r.v,0)) || (b.rows.length-a.rows.length) || a.name.localeCompare(b.name));
-  };
-  document.getElementById('otherList').innerHTML = OTHER_GROUPS.map(g=>{
-    const sum = g.rows.reduce((s,r)=>s+r.v,0), isO = g.key==='others';
-    const t = tableOf(g.rows);
-    let body;
-    if(isO){
-      body = `<div class="team-grid oa-grid">${subs(g).map(sg=>{
-        const tt = tableOf(sg.rows), ss = sg.rows.reduce((s,r)=>s+r.v,0);
-        return `<button type="button" class="team-card oa-card" data-k="${esc(sg.name)}" aria-pressed="false"><div class="tc-head">${avatarHTML(sg.name)}<div class="tc-id"><div class="tc-name">${esc(sg.name)}</div><div class="tc-count">${sg.rows.length} ${sg.rows.length===1?'account':'accounts'}</div></div></div><div class="tc-label">Spend in 11/5 report</div><div class="tc-value">${fmtUsd(ss)}</div><div class="tc-foot"><span class="tc-over">${counts(tt.act,tt.zero)}</span></div></button>`;
-      }).join('')}</div><div class="oa-panel" id="oaPanel" hidden></div>`;
-    } else body = t.html;
-    return `<details data-key="${g.key}"><summary>${avatarHTML(g.name)}<div class="oa-id"><div class="oa-name">${esc(g.name)}</div><div class="oa-count">${isO? subs(g).length+' people, '+g.rows.length+' accounts' : counts(t.act,t.zero)}</div></div><div class="oa-total">${fmtUsd(sum)}<small>spend in 11/5 report</small></div>${chev}</summary><div class="oa-body">${body}</div></details>`;
-  }).join('');
-  const og = OTHER_GROUPS.find(g=>g.key==='others');
-  if(og){
-    const sm = {}; subs(og).forEach(sg=>sm[sg.name]=sg);
-    const panel = document.getElementById('oaPanel');
-    document.querySelectorAll('#otherList .oa-card').forEach(btn=>{
-      btn.addEventListener('click', ()=>{
-        const k = btn.dataset.k;
-        oaSel = (oaSel===k) ? null : k;
-        document.querySelectorAll('#otherList .oa-card').forEach(b=>{ const on = b.dataset.k===oaSel; b.classList.toggle('selected',on); b.setAttribute('aria-pressed',on); });
-        if(!oaSel){ panel.hidden = true; panel.innerHTML=''; return; }
-        const sg = sm[oaSel], tt = tableOf(sg.rows);
-        panel.innerHTML = `<div class="oa-ptitle">${esc(sg.name)}<span>${sg.rows.length} ${sg.rows.length===1?'account':'accounts'}</span></div>${tt.html}`;
-        panel.hidden = false;
-      });
-    });
-  }
-}
-renderOtherAccounts();
 </script>
 </body></html>
