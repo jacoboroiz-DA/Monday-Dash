@@ -826,7 +826,8 @@ const WEEKLY_ALL = WEEKLY_HISTORY.map((w,i,arr)=>({
   wow: i===0 ? null : (w.spend-arr[i-1].spend)/arr[i-1].spend*100,
 }));
 const WEEKS_WINDOW = 18; // rolling window: keep the trailing 18 weeks, oldest drops off as new weeks are appended
-const WEEKLY = WEEKLY_ALL.slice(-WEEKS_WINDOW).map((w,i,arr)=>({
+// Only weeks with a full snapshot are shown, so every visible week can be opened (the whole page switches to it).
+const WEEKLY = WEEKLY_ALL.filter(w=>w.snap && SNAPSHOTS[w.snap]).slice(-WEEKS_WINDOW).map((w,i,arr)=>({
   ...w,
   isCurrent: i===arr.length-1,
 }));
